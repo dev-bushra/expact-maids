@@ -1,0 +1,106 @@
+.platformSection {
+  background: #f3f8fb 0% 0% no-repeat padding-box;
+  overflow: hidden !important;
+  padding: 2rem 6rem;
+}
+
+.platformWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5rem;
+  padding: 10rem 0rem;
+
+  @media screen and (min-width: 1600px) {
+    max-width: 1880px;
+    margin: 0 auto;
+  }
+  .text {
+    margin: 0 auto !important;
+  }
+}
+.mainTitle {
+  span {
+    font: var(--unnamed-font-style-normal) normal medium 18px/37.5px Figtree;
+    text-align: left;
+    font: normal normal medium 18px/38px Figtree;
+    letter-spacing: 0px;
+    color: #04a0bc;
+  }
+  h3 {
+    font: var(--unnamed-font-style-normal) normal
+      var(--unnamed-font-weight-bold) var(--unnamed-font-size-40) / 51px Figtree;
+    letter-spacing: var(--unnamed-character-spacing--1-2);
+    text-align: left;
+    font: normal normal bold 40px/51px Figtree;
+    letter-spacing: -1.2px;
+    font: var(--unnamed-font-style-normal) normal 600
+      var(--unnamed-font-size-40) / 48px Figtree;
+    letter-spacing: var(--unnamed-character-spacing--1-2);
+    text-align: left;
+    font: normal normal 600 40px/48px Figtree;
+    letter-spacing: -1.2px;
+    color: #231f6c;
+    margin-top: 1rem;
+  }
+}
+.mainText {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  font: var(--unnamed-font-style-normal) normal normal 16px/28px Inter;
+  text-align: left;
+  font: normal normal normal 16px/28px Inter;
+  letter-spacing: 0px;
+  color: #231f6c;
+  @media screen and (min-width: 1600px) {
+    max-width: 50rem;
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+  .sub {
+    padding: 1.5rem 0;
+    @media screen and (min-width: 1600px) {
+      font-size: 1.3rem !important;
+    }
+  }
+}
+.primaryBtn {
+  font: var(--unnamed-font-style-normal) normal normal 16px/65px Figtree;
+  text-align: center;
+  justify-content: center;
+  font: normal normal normal 16px/65px Figtree;
+  letter-spacing: 0px;
+  color: #ffffff;
+  background: #04a0bc 0% 0% no-repeat padding-box;
+  border-radius: 2rem;
+  max-width: 9rem;
+  min-width: 9rem;
+  height: 40px;
+  display: flex;
+  box-shadow: rgb(72 163 255 / 20%) 0px 8px 24px;
+  align-items: center;
+  justify-content: center;
+  font-size: smaller;
+  font-weight: 300;
+  max-width: 9rem !important;
+  min-width: 1rem !important;
+  cursor: pointer;
+  &:hover {
+    color: #04a0bc;
+    border: 1px solid #04a0bc;
+    background: transparent;
+  }
+  @media screen and (min-width: 1600px) {
+    min-width: 15rem !important;
+    max-width: 15rem !important;
+    height: 4rem !important;
+    span {
+      font-size: 1.3rem !important;
+    }
+  }
+}
+.platformImg {
+  max-width: 47rem;
+  max-height: 34rem;
+  border-radius: 0px 55px 55px 0px;
+}

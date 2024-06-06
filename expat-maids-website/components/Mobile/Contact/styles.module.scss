@@ -1,0 +1,260 @@
+$date-color: #44a16a;
+$text-color: #17181a;
+$whiteshade-text-color: #f4f8f7;
+$darkblue-color: #231f6c;
+$white-color: #ffffff;
+$container-height: 55rem;
+$lexa-font: "Lexend Deca", sans-serif;
+$btn-width: 10rem;
+$btn-height: 3rem;
+$btn-padding: 1rem;
+
+.thankYouWrapper {
+  background-color: #e1f4f8;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  align-items: center;
+  padding-top: 4.7rem;
+
+  @media screen and (max-width: 600px) {
+  }
+}
+
+.Row {
+  display: flex;
+  flex-direction: column;
+  padding: 0rem;
+  gap: 2rem;
+}
+
+.Col1 {
+  align-items: center;
+
+  .contentWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    .header {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      .headerMainTxt {
+        color: var(--unnamed-color-231f6c) !important;
+        text-align: left !important;
+        letter-spacing: 0px !important;
+        color: #231f6c !important;
+        font-size: 29px !important;
+        display: block !important;
+      }
+      .headerSubTxt {
+        font: var(--unnamed-font-style-normal) normal normal 16px/23px Inter !important;
+        color: var(--unnamed-color-231f6c) !important;
+        text-align: left !important;
+        font: normal normal normal 16px/23px Inter !important;
+        letter-spacing: 0px !important;
+        color: #231f6c !important;
+        display: block !important;
+        font-size: 14px !important;
+      }
+    }
+
+    .contactInfoCard {
+      width: 85vw !important;
+      max-width: 85vw !important;
+      height: auto !important;
+      background: #c1e5ee !important;
+      border-radius: 13px !important;
+      padding: 2rem;
+      margin: 0 auto;
+
+      .timingAndEmailAndphone {
+        display: flex;
+        // grid-template-columns: 30px 1fr;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1.5rem;
+        svg {
+          margin-bottom: 10px !important;
+        }
+      }
+      .timing,
+      .emailAndphone {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        margin-bottom: 1rem;
+      }
+      .emailAndphone {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .cardTxt {
+        margin-left: 0.5rem;
+        font: var(--unnamed-font-style-normal) normal 600 16px/23px Inter;
+        color: var(--unnamed-color-231f6c);
+        text-align: left;
+        font: normal normal 600 16px/23px Inter;
+        letter-spacing: 0px;
+        color: #231f6c;
+        font-size: 14px !important;
+        text-align: center;
+      }
+    }
+
+    .locationInfoCard {
+      width: 85vw !important;
+      max-width: 85vw !important;
+      height: auto !important;
+      background: #c1e5ee !important;
+      border-radius: 13px !important;
+      padding: 2rem 2.5rem !important;
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: center !important;
+      text-align: center !important;
+      margin: 0 auto !important;
+      .cardTxt {
+        margin-left: 0.5rem;
+        font: var(--unnamed-font-style-normal) normal 600 16px/23px Inter;
+        color: var(--unnamed-color-231f6c);
+        text-align: left;
+        font: normal normal 600 16px/23px Inter;
+        letter-spacing: 0px;
+        color: #231f6c;
+        font-size: 14px !important;
+        text-align: center !important;
+      }
+      .link {
+        text-align: left !important;
+        text-decoration: underline !important;
+        font: normal normal normal 16px/23px Inter !important;
+        letter-spacing: 0px !important;
+        color: #1492e6 !important;
+      }
+    }
+  }
+}
+
+.Col2 {
+  align-items: center;
+  padding: 0 !important;
+  margin: 0 !important;
+  margin-top: 1rem !important;
+
+  .closeIcon {
+    position: absolute;
+    top: 2rem;
+    right: 1.5rem;
+    font-size: 25px;
+  }
+
+  .header {
+    padding-bottom: 1rem;
+    font: var(--unnamed-font-style-normal) normal
+      var(--unnamed-font-weight-bold) 24px/40px Figtree !important;
+    color: var(--unnamed-color-231f6c) !important;
+    text-align: left !important;
+    font: normal normal bold 24px/40px Figtree !important;
+    letter-spacing: 0px !important;
+    color: #231f6c !important;
+    font-size: 22px !important;
+  }
+  .contentWrapper {
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border-radius: 13px;
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 0.5rem;
+  }
+  .formRow {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    min-width: 100%;
+    max-width: 100%;
+    .formCol {
+      min-width: 100%;
+      max-width: 100%;
+    }
+  }
+  .label {
+    text-align: left !important;
+    font: normal normal medium 16px/19px Figtree !important;
+    letter-spacing: 0px !important;
+    color: #231f6c !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    padding-left: 5px !important;
+  }
+  .input {
+    height: 2.8rem;
+    border: 1px solid #231f6c53;
+    border-radius: 8px;
+    color: #231f6c !important;
+    font-size: 16px !important;
+  }
+  .textAreaContainer {
+    min-width: 100%;
+    .textArea {
+      margin-top: 1.5rem;
+      min-height: 5rem;
+      min-width: 100%;
+      border: 1px solid #231f6c53;
+      border-radius: 8px;
+      color: #231f6c !important;
+      font-size: 16px !important;
+    }
+  }
+}
+// .mainBtn {
+//   position: fixed;
+//   top: 92vh;
+//   bottom: 0;
+//   right: 0;
+//   left: 0;
+//   z-index: 10;
+//   // margin-top: 1rem;
+//   padding: 1rem;
+//   min-width: 100% !important;
+//   max-width: 100% !important;
+//   margin: auto;
+//   justify-content: space-around;
+//   display: flex;
+//   align-items: center;
+//   background: #231f6c;
+//   // border-radius: 13px;
+//   color: #ffffff;
+//   cursor: pointer;
+//   .next {
+//     font-size: 18px !important;
+//   }
+// }
+.mainBtn {
+  padding: 0.7rem;
+  min-width: 100% !important;
+  max-width: 100% !important;
+  margin-top: 1.5rem;
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+  background: #231f6c;
+  border-radius: 10px;
+  color: #ffffff;
+  cursor: pointer;
+  .next {
+    font-size: 18px !important;
+  }
+}
+
+.select {
+  display: flex;
+  padding-left: 0.5rem;
+  width: 100%;
+}

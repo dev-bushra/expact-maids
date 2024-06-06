@@ -1,0 +1,110 @@
+$date-color: #44a16a;
+$text-color: #17181a;
+$whiteshade-text-color: #f4f8f7;
+$darkblue-color: #231F6C;
+$white-color: #ffffff;
+$container-height: 55rem;
+$lexa-font: "Lexend Deca", sans-serif;
+$btn-width: 10rem;
+$btn-height: 3rem;
+$btn-padding: 1rem;
+
+.thankYouWrapper {
+    background-color: #E1F4F8;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    padding-top: 2rem;
+
+    @media screen and (min-width: 1920px) {
+        // padding: 9rem 8rem;
+    }
+}
+
+.Row {
+    position: relative; 
+    height: 100vh;;
+}
+
+.TextCol {
+    display: grid;
+    grid-template-columns: 10fr 1fr;
+    column-gap: 5rem;
+    align-items: center;
+    justify-content: center;
+
+    .leftTxtCol {
+        padding-left: 2.5rem;
+        .ThankuTxt {
+            font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) 66px/52px Manrope;
+            text-align: left !important;
+            font: normal normal bold 66px/52px Manrope !important;
+            letter-spacing: 0px !important;
+            color: #231F6C !important;
+            font-size: 66px !important;
+            font-weight: 900 !important;
+
+            @media screen and (min-width: 1920px) {
+                font-size: 107px !important;
+            }
+        }
+        .body {
+            display: block;
+            margin: 2rem 0 2.5rem 0 !important;
+            font: var(--unnamed-font-style-normal) normal normal 16px/26px Inter !important;
+            text-align: left !important;
+            font: normal normal normal 16px/26px Inter !important;
+            letter-spacing: 0px !important;
+            color: #231F6C !important;
+            font-size: 16px !important;
+            font-weight: normal !important;
+
+            @media screen and (min-width: 1920px) {
+                padding-left: 0.5rem;
+                margin: 4.5rem 0 0 0 !important;
+                line-height: 50px !important;
+                letter-spacing: 1.5px !important;
+                color: #231F6C !important;
+                font-size: 24px !important;
+                font-weight: 300 !important;
+            }
+        }
+        .subBody {
+            display: block;
+            font: var(--unnamed-font-style-normal) normal normal 16px/26px Inter !important;
+            text-align: left !important;
+            font: normal normal normal 16px/26px Inter !important;
+            letter-spacing: 0px !important;
+            color: #231F6C !important;
+            font-size: 16px !important;
+            font-weight: normal !important;
+
+                @media screen and (min-width: 1920px) {
+                    padding-left: 0.5rem;
+                    line-height: 50px !important;
+                    letter-spacing: 1.5px !important;
+                    color: #231F6C !important;
+                    font-size: 24px !important;
+                    font-weight: 300 !important;
+                }
+        }
+        .Txt {}
+    }
+
+    .rightStarImgCol {}
+}
+
+.ImgCol {
+    .bannerImg{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+
+        // Laptop Screen
+        @media screen and (min-width: 1536px) {}
+
+        // Desktop Screen
+        @media only screen and (min-width: 1800px) {}
+    }
+}

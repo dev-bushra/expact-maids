@@ -1,0 +1,262 @@
+$lexa-font: "Lexend Deca", sans-serif;
+$blue-color: #138be5;
+$text-color: #17181a;
+$border-color: #17181a6c;
+$white-color: #ffffff;
+
+.navWrap {
+  position: fixed;
+  padding: 1.5rem 3rem;
+  z-index: 10;
+  width: 100%;
+  align-items: center;
+  transition: 0.4s ease-in-out;
+  background: transparent;
+  margin: 0 auto;
+  max-width: 1536px;
+  width: 100%;
+
+  &.bgWhiteNav {
+    background: $white-color;
+    width: 100%;
+    padding: 0.5rem 3rem;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.02);
+    .brandlogo {
+      transform: scale(0.75);
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    padding: 1rem 0rem;
+    &.bgWhiteNav {
+      padding: 1rem;
+      .brandlogo {
+        transform: scale(1);
+      }
+    }
+  }
+}
+.brandlogo {
+  width: 12rem;
+  transition: 0.3s ease-in-out;
+
+  @media only screen and (max-width: 600px) {
+    width: 9rem;
+  }
+}
+
+.navUl {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 3rem;
+  margin: 0px;
+  font-family: $lexa-font;
+  font-weight: 300;
+  letter-spacing: -0.02rem;
+  li {
+    cursor: pointer;
+    position: relative;
+    &::after {
+      transition: 0.4s ease-in-out;
+      content: "";
+      background: $text-color;
+      width: 0%;
+      height: 0.15rem;
+      position: absolute;
+      bottom: -0.2rem;
+      left: 0px;
+    }
+    a {
+      color: $text-color;
+      text-decoration: none;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+    &:hover {
+      &::after {
+        width: 105%;
+      }
+    }
+  }
+}
+
+.sideBarWrap {
+  position: fixed;
+  top: 4.2rem;
+  left: 0px;
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.492);
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+
+  @media only screen and (min-width: 601px) {
+    top: 5.2rem;
+  }
+}
+
+.sideBar {
+  height: 100vh;
+  width: 100%;
+  max-width: 100%;
+  background: $white-color;
+  animation: slideIn 0.3s ease-in-out;
+  text-align: center;
+
+  &,
+  * {
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+
+  ul {
+    margin-top: 9rem;
+    list-style: none;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.3rem;
+    animation-delay: 1s;
+    animation: fadeIn 0.3s ease-in-out;
+
+    li,
+    a {
+      color: $text-color;
+      animation-delay: 1s;
+      animation: fadeIn 0.3s ease-in-out;
+      font-family: $lexa-font;
+      font-weight: 300;
+      text-decoration: none !important;
+    }
+
+    a {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+.slideOut {
+  width: 0rem;
+  * {
+    opacity: 0;
+  }
+}
+.opacityZero {
+  opacity: 0;
+}
+
+.socialContent {
+  margin: 1rem;
+  border-top: 1px solid $border-color;
+  padding: 1rem 0rem;
+  display: grid;
+  gap: 0.75rem;
+  p {
+    font-size: 0.9rem;
+  }
+}
+.socialWrap {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+
+  .social {
+    width: 2rem;
+    height: 2rem;
+  }
+  animation-delay: 1s;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes slideIn {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 13rem;
+  }
+}
+@keyframes slideOut {
+  0% {
+    width: 13rem;
+  }
+  100% {
+    width: 0rem;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.rightCon {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+
+  .callBtn {
+    padding: 0.5rem 1rem !important;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    border: 1px solid #231f6c !important;
+    background: #231f6c !important;
+    border-radius: 3rem !important;
+    color: white !important;
+    min-width: fit-content !important;
+
+    .callBtnIcon {
+      margin-right: 10px !important;
+    }
+
+    &:hover {
+      background: transparent !important;
+      color: white !important;
+    }
+  }
+}
+
+.brandWrap {
+  // display: flex;
+  // flex-direction: row;
+  // align-items: center;
+  // justify-content: space-between;
+  // width: 100%;
+  img{
+    width: 140px;
+    height: auto;
+  }
+}
+
+.navTextWrap {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+}
+
+.ProfileIcon {
+  margin: 0 2rem;
+}
+
+// Mobile
+@media screen and (max-width: 495px) {
+  .ProfileIcon {
+    display: none !important;
+  }
+  .callBtn {
+    margin-right: 2rem;
+    padding: 0.3rem 0.5rem;
+    font-size: 12px;
+    .callBtnIcon {
+      max-width: 20px;
+    }
+  }
+}

@@ -1,0 +1,349 @@
+.packageWrapper {
+  background-image: url("../../../assets/images/packge-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 30rem;
+  max-height: 30rem;
+  padding: 0rem 6rem;
+  div {
+    span {
+      font-size: 0.875rem !important;
+    }
+  }
+  .packageSubWrap {
+    max-width: 1880px;
+    margin: 0 auto;
+  }
+
+  // row-1
+  .row1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 5rem;
+
+    .packageTogglerContainer {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding: 0.5rem 0.1rem;
+      background-color: #d1e9f0;
+      border-radius: 20px;
+      min-width: 40rem;
+      max-width: 40rem;
+
+      .packageNotSelected {
+        font-size: 18px;
+        color: #231f6c;
+        background-color: transparent;
+        padding: 1rem 2rem;
+        cursor: pointer;
+      }
+      .packageSelected {
+        font-weight: bold;
+        color: #04a0bc;
+        background-color: white;
+        border-radius: 16px;
+        padding: 1rem 2rem;
+        cursor: pointer;
+        box-shadow: -2px 6px 10px rgb(96 125 139 / 36%);
+      }
+    }
+  }
+
+  // row-2
+  .row2 {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    margin-top: 5rem;
+
+    // col-1
+    .col1 {
+      height: 100%;
+      display: flex;
+      align-self: flex-start;
+      .mainTitle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        span {
+          font: var(--unnamed-font-style-normal) normal medium 18px/37.5px
+            Figtree;
+          text-align: left;
+          font: normal normal medium 18px/38px Figtree;
+          letter-spacing: 0px;
+          color: #04a0bc;
+        }
+        h3 {
+          font: var(--unnamed-font-style-normal) normal
+            var(--unnamed-font-weight-bold) var(--unnamed-font-size-40) / 51px
+            Figtree;
+          letter-spacing: var(--unnamed-character-spacing--1-2);
+          text-align: left;
+          font: normal normal bold 40px/51px Figtree;
+          letter-spacing: -1.2px;
+          // color: #FFFFFF;
+          font: var(--unnamed-font-style-normal) normal 600
+            var(--unnamed-font-size-40) / 48px Figtree;
+          letter-spacing: var(--unnamed-character-spacing--1-2);
+          text-align: left;
+          font: normal normal 600 40px/48px Figtree;
+          letter-spacing: -1.2px;
+          color: #231f6c;
+        }
+        @media screen and (min-width: 1600px) {
+          span {
+            font-size: 2rem !important;
+          }
+          h3 {
+            font-size: 4rem !important;
+          }
+        }
+      }
+    }
+
+    // col-2
+    .col2 {
+      // card-1
+      .card1 {
+        width: 50rem;
+        height: auto;
+        // height: 24rem;
+        background-color: #d1e9f079;
+        border-radius: 40px;
+        padding: 1.5rem;
+        // padding: 3rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        animation: fadeIn 0.5s ease-in-out;
+        .s1 {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          height: 100%;
+          animation: fadeIn 0.5s ease-in-out;
+
+          h5 {
+            font-size: 35px;
+            font-weight: normal;
+            color: #231f6c;
+          }
+          .price {
+            display: flex;
+            align-items: center;
+            margin: 1rem 0;
+            h3 {
+              font-size: 45px;
+              font-weight: black;
+              color: #04a0bc;
+            }
+            span {
+              margin-left: 0.6rem;
+              font: var(--unnamed-font-style-normal) normal medium 25px/26px
+                Inter;
+              text-align: left;
+              text-decoration: line-through;
+              font: normal normal medium 25px/26px Inter;
+              letter-spacing: 0px;
+              color: #b1b6cb;
+            }
+          }
+          .vat {
+            font: var(--unnamed-font-style-normal) normal normal 18px/19px Inter;
+            color: var(--unnamed-color-211d4f);
+            text-align: left;
+            font: normal normal normal 18px/19px Inter;
+            letter-spacing: 0px;
+            color: #211d4f;
+          }
+          .footer {
+            font: var(--unnamed-font-style-normal) normal normal 16px/19px Inter;
+            color: var(--unnamed-color-211d4f);
+            text-align: left;
+            font: normal normal normal 16px/19px Inter;
+            letter-spacing: 0px;
+            color: #211d4f;
+            margin-top: 2rem;
+            max-width: 70%;
+            font-size: 14px;
+          }
+        }
+        .s2 {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          .check {
+            display: flex;
+            align-items: center;
+            margin: 0.5rem 0;
+            span {
+              margin-left: 0.7rem;
+              font: var(--unnamed-font-style-normal) normal normal 16px/19px
+                Inter;
+              color: var(--unnamed-color-211d4f);
+              text-align: left;
+              font: normal normal normal 16px/19px Inter;
+              letter-spacing: 0px;
+              color: #211d4f;
+              font-size: 12px;
+            }
+          }
+        }
+      }
+
+      // card-2
+      .card2 {
+        width: 50rem;
+        height: 26.5rem;
+        background-color: #eff1ff;
+        border-radius: 40px;
+        padding: 4rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        animation: fadeIn 0.5s ease-in-out;
+        .s1 {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          height: 100%;
+          animation: fadeIn 0.5s ease-in-out;
+          h2 {
+            font-size: 35px;
+            font-weight: normal;
+            color: #231f6c;
+          }
+          .priceContainer {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: start;
+            margin: 2rem 0;
+            .price {
+              display: flex;
+              flex-direction: column;
+              align-items: start;
+              margin: 0.3rem 0;
+              .weekly {
+                font: var(--unnamed-font-style-normal) normal normal 18px/19px
+                  Inter;
+                color: var(--unnamed-color-211d4f);
+                text-align: left;
+                font: normal normal normal 18px/19px Inter;
+                letter-spacing: 0px;
+                color: #211d4f;
+                text-decoration: none;
+                font-size: 12px;
+                font-weight: normal;
+              }
+              .priceTitle {
+                display: flex;
+                h1 {
+                  font-size: 40px;
+                  font-weight: black;
+                  color: #04a0bc;
+                }
+                span {
+                  margin-top: 1rem;
+                  margin-left: 0.6rem;
+                  font: var(--unnamed-font-style-normal) normal medium 25px/26px
+                    Inter;
+                  text-align: left;
+                  text-decoration: line-through;
+                  font: normal normal medium 25px/26px Inter;
+                  letter-spacing: 0px;
+                  color: #b1b6cb;
+                }
+              }
+            }
+          }
+        }
+        .s2 {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          .check {
+            display: flex;
+            align-items: center;
+            margin: 0.5rem 0;
+            span {
+              margin-left: 0.7rem;
+              font: var(--unnamed-font-style-normal) normal normal 16px/19px
+                Inter;
+              color: var(--unnamed-color-211d4f);
+              text-align: left;
+              letter-spacing: 0px;
+              color: #211d4f;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.dNone {
+  display: none !important;
+}
+
+.subText {
+  animation: fadeIn 0.5s ease-in-out;
+  margin-top: 1rem;
+  margin-left: 5rem;
+}
+
+.primaryBtn {
+  margin-top: 1.5rem;
+  font: var(--unnamed-font-style-normal) normal normal 16px/65px Figtree;
+  text-align: center;
+  justify-content: center;
+  font: normal normal normal 16px/65px Figtree;
+  letter-spacing: 0px;
+  color: #ffffff;
+  background: #04a0bc 0% 0% no-repeat padding-box;
+  border-radius: 32px;
+  padding: 10px !important;
+  // margin: 1.5rem 0.5rem 0.5rem 0.5rem;
+  // max-width: 9rem;
+  // min-width: 9rem;
+  height: 60px;
+  display: flex;
+  box-shadow: rgb(72 163 255 / 20%) 0px 8px 24px;
+  align-items: center;
+  justify-content: center;
+  font-size: smaller;
+  font-weight: 400;
+  // max-width: 7rem !important;
+  // min-width: 1rem !important;
+  cursor: pointer;
+  &:hover {
+    color: #04a0bc;
+    border: 1px solid #04a0bc;
+    background: transparent;
+  }
+  span {}
+  @media screen and (min-width: 1600px) {
+    // min-width: 15rem !important;
+    // max-width: 15rem !important;
+    width: 100%;
+    // height: 4rem !important;
+    span {
+      font-size: 2rem !important;
+    }
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

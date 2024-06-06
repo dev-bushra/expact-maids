@@ -1,0 +1,87 @@
+$date-color: #44a16a;
+$text-color: #17181a;
+$whiteshade-text-color: #f4f8f7;
+$darkblue-color: #231F6C;
+$white-color: #ffffff;
+$bg-color:#F3F8FB;
+$container-height: 55rem;
+$lexa-font: "Lexend Deca", sans-serif;
+$btn-width: 10rem;
+$btn-height: 3rem;
+$btn-padding: 1rem;
+
+.aboutWrapper {
+    padding: 3rem 1.5rem;
+    background-color: $bg-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.title{
+    color: $darkblue-color;
+    text-align: center;
+    white-space:break-spaces;
+    font-size: 1.5rem !important;
+    font-weight: 800 !important;
+    padding: 0 0.5rem;
+}
+
+.title2{
+    color: $darkblue-color;
+    text-align: center;
+    white-space:break-spaces;
+    font-size: 2.2rem !important;
+    font-weight: 800 !important;
+}
+
+.logosContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    // gap: 0.5rem;
+    width: 90%;
+    align-items: center;
+    justify-self: center;
+}
+
+.allLogosInOnePic {
+    justify-self: center;
+    align-self: center;
+    margin: auto;
+}
+
+.footer {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.smallIconsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.2rem;
+}
+
+.smallIcon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.8rem;
+
+    .Icon {
+        max-width: auto;
+        margin: 0;
+        padding: 0;
+    }
+    span {
+        font-size: 0.9rem !important;
+        font-weight: 500;
+        color: #231F6C !important;
+        // margin-left: 1rem;
+    } 
+}
